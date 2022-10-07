@@ -1,0 +1,19 @@
+.user-content-notifications{
+    width: 36rem;
+    height: max-content;
+    cursor: pointer;
+}
+.user-content-notifications p{
+    font-size: 15px;
+    color: gray;
+}
+.notifications-header h2{
+    color: rgb(14, 70, 145);
+}
+.notification{
+    transition: all .4s ease;
+}
+.notification:hover{
+    background: rgb(186, 200, 207);
+
+}

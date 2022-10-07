@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>LogIn | SingIn</title>
+    <link rel="stylesheet" href="form.css"/>
+  </head>
+  <body onload="unknownPerson()">
+
+    <main>
+      <div class="box">
+        <div class="inner-box">
+          <div class="forms-wrap">
+
+
+            <form class="sign-in-form logIn">
+              <div class="logo">
+                <img src="img/c.png" alt="">
+                <h4>Ideias Brilhantes</h4>
+              </div>
+              <div class="heading">
+                <h2>Bem Vindo</h2>
+                <h6>Ainda não tem uma conta?</h6>
+                <a href="#" class="toggle">Criar Conta</a>
+              </div>
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input type="email"  class="input-field email" >
+                  <label>E-mail</label>
+                </div>
+                <div class="input-wrap">
+                  <input type="password" class="input-field password"  name="password">
+                  <label>Passoword</label>
+                </div>
+                <div type="submit" value="Sign In" class="sign-btn" onclick="logIn()">Enviar</div>
+                <p class="text">
+                  Esqueceu a senha ou seus dados de login?
+                  <a href="#"> Obter ajuda para fazer</a> login
+                </p>
+              </div>
+            </form>
+
+
+
+            
+
+            <form class="sign-up-form signUp">
+              <div class="logo">
+                <img src="img/c.png" alt="">
+                <h4>Ideias Brilhantes</h4>
+              </div>
+              <div class="heading">
+                <h2>Criar conta</h2>
+                <h6>Já tem uma conta?</h6>
+                <a href="#" class="toggle">entrar</a>
+              </div>
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input type="text" class="input-field firstName">
+                  <label>Name</label>
+                </div>
+                <div class="input-wrap">
+                  <input type="text" class="input-field lastName">
+                  <label>Name</label>
+                </div>
+                <div class="input-wrap">
+                  <input type="email" class="input-field email">
+                  <label>E-mail</label>
+                </div>
+                <div class="input-wrap">
+                  <input type="password" class="input-field password">
+                  <label>Passoword</label>
+                </div>
+                <div type="submit" value="Sign Up" class="sign-btn" onclick="signUp()">Enviar</div>
+                <p class="text">
+                  Ao me inscrever, concordo com os
+                  <a href="#"> Termos e Serviços</a> e
+                  <a href="#"> Política de Privacidade</a>
+                </p>
+              </div>
+            </form>
+
+            
+          </div>
+          <div class="img">
+            <div class="images">
+              <img src="img/image1.png" class="image" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+<script src="form.js"></script>
+  </body>
+ 
+</html>

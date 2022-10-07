@@ -1,0 +1,82 @@
+.user-content-box{
+    width: 100rem;
+}
+.message-header{
+    width: 100%;
+    height: 5.5rem;
+}
+.message-header .profile-message{
+    display: flex;
+}
+.message-header .profile-message img{
+    width: 2rem;
+    height:2rem;
+    border-radius: 50%;
+}
+.message-header h2{
+    font-size: 2rem;
+}
+.message-container{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height:30rem;
+    background: #d8daf5;
+}
+.myTalksWithHim{
+    flex-grow: 1;
+}
+.myTalksWithHim  .fa-user{
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+.input-send{
+    display: flex;
+}
+.myMessage-photo img{
+    width: 13rem;
+    height: 16rem;
+    margin-left: 1rem;
+    border-radius: 7px;
+}
+.myMessage-photo .dates-message p{
+    margin-left: 1rem;
+}
+.friendMessage-photo img{
+    width: 13rem;
+    height: 16rem;
+    border-radius: 7px;
+    margin-left: 23rem;
+    margin-right: 1rem;
+}
+.friendMessage-photo .dates-message p{
+    margin-left: 23rem;
+}
+.myMessage{
+    background-color: blueviolet;
+    max-width: 40%;
+    /* min-height: 4rem; */
+    padding: .5rem;
+    padding-left: 1rem;
+    color: white;
+    margin: .3rem .2rem;
+    border-radius: 0 10px 10px 10px;
+    margin-left: 1rem;
+}
+ .friendMessage{
+    background: rgb(22, 36, 153);
+    max-width:40%;
+    color: white;
+    padding: .5rem;
+    margin: .3rem .2rem;
+    margin-left: 25rem;
+    border-radius: 10px 0 10px 10px;
+    margin-right: 1rem;
+}
+.dates-message p{
+    /* position: absolute; */
+    font-size: 13px;
+    margin-top: .3rem;
+    margin-left: .1rem;
+    color: rgb(17, 17, 77);
+}

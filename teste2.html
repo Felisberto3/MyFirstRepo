@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="file"></label>
+    <input id="file" type="file">
+    <img src="" alt="">
+</body>
+<script>
+    const input=document.querySelector("input")
+    const img=document.querySelector("img")
+    const url=localStorage.getItem("imgURL")
+    url && (img.src=url)
+    input.onchange=()=>{
+        const url=input.files[0]
+        const reader= new FileReader()
+        reader.addEventListener("load",()=>{
+        localStorage.setItem("imgURL",reader.result) 
+        img.src=reader.result 
+        },
+        false
+        );
+        url && (reader.readAsDataURL(url))
+    }
+</script>
+</html>
